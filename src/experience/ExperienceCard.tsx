@@ -11,7 +11,7 @@ function ExperienceCard({ experience }: ExpCardProps) {
     <div key={experience.id.toString()} className={styles["list-item"]}>
       <div className={styles["experience-card"]}>
         <h5 className={styles["name"]}> {experience.name}</h5>
-        <p className={styles["expertise"]} />
+        <p className={styles["expertise"]}>{experience.expertise}</p>
         <p className={styles["organisation-label"]}>Team organisation</p>
         <p className={styles["text"]}>{experience.organisation}</p>
         <p className={styles["more-about"]}>More about</p>
@@ -20,4 +20,4 @@ function ExperienceCard({ experience }: ExpCardProps) {
   );
 }
 
-export default ExperienceList;
+export default ExperienceCard;

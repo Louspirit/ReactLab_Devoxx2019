@@ -6,7 +6,7 @@ interface ExpCardProps {
   experience: Experience;
 }
 
-function ExperienceCard({ experience }: ExpCardProps) {
+const ExperienceCard = ({ experience }: ExpCardProps) => {
   return (
     <div key={experience.id.toString()} className={styles["list-item"]}>
       <div className={styles["experience-card"]}>
@@ -18,6 +18,6 @@ function ExperienceCard({ experience }: ExpCardProps) {
       </div>
     </div>
   );
-}
+};
 
 export default ExperienceCard;

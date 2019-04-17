@@ -7,16 +7,22 @@ interface ExpListProps {
   experiences: Experience[];
 }
 
-function ExperienceList({ experiences }: ExpListProps) {
-  return (
-    <div className={styles["list-main-container"]}>
-      <div className={styles["list-container"]}>
-        {experiences.map(experience => (
-          <ExperienceCard experience={experience} />
-        ))}
+class ExperienceList extends React.Component<{}, {}> {
+  constructor(private experiencesProps: ExpListProps) {
+    super(experiencesProps);
+  }
+
+  render() {
+    return (
+      <div className={styles["list-main-container"]}>
+        <div className={styles["list-container"]}>
+          {this.experiencesProps.experiences.map(experience => (
+            <ExperienceCard experience={experience} />
+          ))}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default ExperienceList;

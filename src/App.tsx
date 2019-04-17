@@ -19,13 +19,7 @@ export const App = () => {
             <button className={styles["button"]}>Create my experience</button>
           </Link>
         </div>
-        <Route
-          path="/"
-          exact
-          component={() => {
-            return <ExperienceList experiences={experiences} />;
-          }}
-        />
+        <Route path="/" exact component={ExperienceList} />
         <Route path="/experience/create" component={CreateWizard} />
       </div>
     </BrowserRouter>

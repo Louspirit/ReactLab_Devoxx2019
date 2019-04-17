@@ -1,0 +1,120 @@
+.information-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  border: none;
+  padding: 0 20px;
+  border-radius: 2px;
+  background-color: #ffcf37;
+  color: #222222;
+  font-family: 'Graphik Web';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+}
+
+.label {
+  color: #222222;
+  font-family: 'Graphik Web';
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+.align-right {
+  flex-direction: row-reverse;
+}
+
+.input {
+  border-radius: 2px;
+  border: none;
+  color: #222222;
+  font-family: 'Graphik Web';
+  font-size: 16px;
+  line-height: 36px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 14px;
+}
+
+.line-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.input-container:last-child {
+  margin-right: 0px;
+}
+
+.select {
+  border: none;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  color: #222222;
+  font-family: 'Graphik Web';
+  font-size: 16px;
+  line-height: 36px;
+  height: 36px;
+  padding: 0 14px;
+  max-width: 300px;
+}
+
+.max-width {
+  max-width: 300px;
+}
+
+.textarea {
+  border: none;
+  height: 100px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 7px 14px;
+  color: #222222;
+  font-family: 'Graphik Web';
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.practices-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  margin-top: auto;
+}
+.practices-container > div {
+  border-radius: 2px;
+  background-color: #253ab6;
+  color: #ffffff;
+  font-family: 'Graphik Web';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  height: 36px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
+.practices-container > div > span:last-child {
+  color: #e39774;
+  cursor: pointer;
+}
+.practices-container > div > span:first-child {
+  margin-right: 10px;
+}
